@@ -27,6 +27,20 @@ Implementasi pengendalian *timer* dan *interrupt* secara *bare-metal* (manipulas
 | **Poin 2: Debouncing Pushbutton** | `poin2.c` | `EXTI4` (`PA4`)<br>`TIM2` (50 ms)<br>LED (`PA1`) | `PSC = 15999`<br>`ARR = 49` | Membaca penekanan push button `PA4` via interupsi `EXTI4`, menahan pembacaan selama **50 ms** dengan `TIM2`, lalu menggunakan variabel `flag` untuk mengubah status LED `PA1`. |
 | **Poin 3: Push to Blink** | `poin3.c` | `GPIOA` (`PA4`)<br>`TIM3` (100 ms)<br>LED (`PA1`) | `PSC = 15999`<br>`ARR = 99` | Mengedipkan LED `PA1` pada frekuensi **5 Hz** (*toggle* tiap 100 ms) selama push button `PA4` ditahan, dan langsung mematikannya saat tombol dilepas. |
 
+## DEMO
+Poin 1 :
+<img width="400" height="420" alt="poin1" src="https://github.com/user-attachments/assets/4ae50ae8-ae20-430c-8d9e-2e9911685f11" />
+
+Poin 2 :
+<img width="400" height="427" alt="poin2 (2)" src="https://github.com/user-attachments/assets/b0453a1b-7de0-4a8a-84d7-4664ca3757dd" />
+
+Poin 3 :
+<img width="400" height="427" alt="poin3 (2)" src="https://github.com/user-attachments/assets/c6ad4bf0-caf8-4676-a82f-370f3d2fa710" />
+
+
+
+
+
 ## Struktur Direktori
 
 ```text
